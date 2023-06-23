@@ -1,3 +1,21 @@
+// Toggle class active untuk Tab menu- ada jadi gaada, gaada jadi ada
+const navbarNav = document.querySelector(".navbar-nav");
+// cari documant yang namany query selector
+// cari element yg nama kelas nya navbar-nav
+
+// ketika tab-menu di klik
+document.querySelector("#tab-menu").onclick = (e) => {
+    navbarNav.classList.toggle("active");
+    e.preventDefault();
+};
+
+const tab = document.querySelector("#tab-menu");
+document.addEventListener("click", function (e) {
+    if (!tab.contains(e.target) && !navbarNav.contains(e.target)) {
+        navbarNav.classList.remove("active");
+    }
+});
+
 // Cart
 const cartBox = document.querySelector('.cart');
 
