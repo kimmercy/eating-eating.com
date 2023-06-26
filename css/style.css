@@ -245,7 +245,6 @@ section {
     background-position: center;
     position: relative;
     -webkit-mask: url("../img/hero.jpg");
-    mask-image: linear-gradient(rgb(255, 255, 255) 85%, rgba (0, 0, 0, 0));
     -webkit-mask-image: linear-gradient(rgb(255, 255, 255) 85%, rgba (0, 0, 0, 0));
 
     /* terbalik, yg ada warna nya jd transparant */
@@ -270,11 +269,11 @@ section {
     position: absolute;
     /* background: salmon; */
     inset: 0;
-    -webkit-mask: url(img/hero.jpg);
+    /* -webkit-mask: url(img/hero.jpg);
     -webkit-mask-image: url(img/masked.jpg);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
-    -webkit-mask-position: center;
+    -webkit-mask-position: center; */
 }
 
 /* Content tulisan ke tengah sedikit, tdk terlalu menyamping */
@@ -283,14 +282,14 @@ section {
     width: 100%;
     text-align: center;
     position: fixed;
-    top: 300px;
+    top: 150px;
     /* max-width: 60rem; */
 }
 
 .hero .content h1 {
     font-size: 4rem;
     color: var (--text-color);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.795);
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.795); */
     line-height: 1.2;
 }
 
@@ -303,7 +302,7 @@ section {
     margin-top: 1rem;
     line-height: 1.4;
     font-weight: 100;
-    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    /* text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); */
     mix-blend-mode: difference;
     /* warna ikut berubah mengikuti background, just in case */
 }

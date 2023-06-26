@@ -73,6 +73,7 @@ function ready() {
     document
         .getElementsByClassName('btn-buy')[0]
         .addEventListener("click", buyButtonClicked);
+
 }
 
 function removeCartItem(event) {
@@ -86,7 +87,7 @@ function buyButtonClicked() {
     alert('Your Order is placed')
     var cartContent = document.getElementsByClassName('cart-content')[0]
     while (cartContent.hasChildNodes()) {
-        cartContent.removeChild(cartContent.firstChild);
+        cartContent.removeChild(cartContent.firstChild)
     }
     updatetotal();
 }
@@ -153,9 +154,10 @@ function updatetotal() {
         var price = parseFloat(priceElement.innerText.replace("$", ""));
         var quantity = quantityElement.value
         total = total + (price * quantity);
-        //If price contain some cents value
-        total = Math.round(total * 100) / 100;
-
-        document.getElementsByClassName('total-price')[0].innerText = "$" + total;
     }
+    //If price contain some cents value
+    total = Math.round(total * 100) / 100;
+
+    document.getElementsByClassName('total-price')[0].innerText = "$" + total;
+
 }
