@@ -244,7 +244,7 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
-    -webkit-mask: url("../img/hero.jpg");
+    -webkit-mask: url(../img/hero.jpg);
     -webkit-mask-image: linear-gradient(rgb(255, 255, 255) 85%, rgba (0, 0, 0, 0));
 
     /* terbalik, yg ada warna nya jd transparant */
@@ -269,11 +269,11 @@ section {
     position: absolute;
     /* background: salmon; */
     inset: 0;
-    /* -webkit-mask: url(img/hero.jpg);
-    -webkit-mask-image: url(img/masked.jpg);
+    -webkit-mask: url(../img/hero.jpg);
+    -webkit-mask-image: url(../img/masked.svg);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
-    -webkit-mask-position: center; */
+    -webkit-mask-position: center;
 }
 
 /* Content tulisan ke tengah sedikit, tdk terlalu menyamping */
